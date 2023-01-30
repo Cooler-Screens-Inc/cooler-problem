@@ -1,0 +1,15 @@
+.husky/
+.eslint*
+.prettierrc
+.gitignore
+
+node_modules/
+
+jest.config.js
+makefile
+
+*.yml
+*.md
+
+scripts
+!scripts/health-check.ts

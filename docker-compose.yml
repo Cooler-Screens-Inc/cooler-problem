@@ -1,0 +1,11 @@
+version: '3.7'
+services:
+  postgres:
+    container_name: postgres
+    image: postgres:11 # Azure Postgres version
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_USER: sa
+      POSTGRES_PASSWORD: devPassword1!
+      POSTGRES_DB: master

@@ -1,0 +1,15 @@
+version: '3.7'
+services:
+  api:
+    build: .
+    container_name: api_under_test
+    env_file: .env.dev
+    environment:
+      DB_SERVER: postgres
+    healthcheck:
+      test: ['CMD', 'npm', 'run', 'healthcheck']
+      interval: 1s
+      start_period: 1s
+      timeout: 10s
+    ports:
+      - '${LOCAL_PORT}:4000'
