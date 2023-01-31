@@ -22,7 +22,7 @@ interface ImpressionLog {
     screenId: string
     campaignId: string
     timestamp: string | number  // Choose whichever format you prefer
-    impressions: number         // Will always be an integer number
+    impressions: number         // Will always be an integer number >= 0
 }
 ```
 
