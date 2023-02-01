@@ -1,7 +1,7 @@
-start: node_modules
+start: install
 	npm start
 
-node_modules: package.json package-lock.json
-
 install: node_modules
+
+node_modules: package.json package-lock.json
 	npm ci
